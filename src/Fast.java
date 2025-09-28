@@ -59,7 +59,7 @@ public class Fast {
 
                     Arrays.sort(linePoints);
 
-                    if (linePoints[0].equals(p)) { // Виводимо тільки якщо p - найменша точка
+                    if (linePoints[0].compareTo(p) == 0){ // Виводимо тільки якщо p - найменша точка
                         for (int k = 0; k < linePoints.length; k++) {
                             System.out.print(linePoints[k]);
                             if (k < linePoints.length - 1) {
