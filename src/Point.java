@@ -56,7 +56,29 @@
         }
 
 
+        public static void main(String[] args) {
+            Point origin = new Point(0, 0);
 
+            Point horizontal = new Point(5, 0);   // нахил
+            Point slope1 = new Point(2, 2);       // нахил 1
+            Point slope2 = new Point(1, 3);       // нахил 3
+            Point vertical = new Point(0, 5);     // нахил нескінченність
+            Point same = new Point(0, 0);         // нахил -нескінченність
+
+
+            int SLOPE_ORDER_result1 = origin.SLOPE_ORDER.compare(horizontal, slope1);
+            System.out.println(SLOPE_ORDER_result1);
+
+            int SLOPE_ORDER_result2 = origin.SLOPE_ORDER.compare(vertical, same);
+            System.out.println(SLOPE_ORDER_result2);
+
+            int SLOPE_ORDER_result3 = origin.SLOPE_ORDER.compare(slope2, slope1);
+            System.out.println(SLOPE_ORDER_result3);
+
+            int SLOPE_ORDER_result4 = origin.SLOPE_ORDER.compare(origin, horizontal); //origin - ироджений сегмент
+            System.out.println(SLOPE_ORDER_result4);
+
+        }
 
     }
 
