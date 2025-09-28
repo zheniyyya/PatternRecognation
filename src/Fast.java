@@ -54,18 +54,20 @@ public class Fast {
                     linePoints[0] = p;//опорна
 
                     for (int k = 0; k < count; k++) {
-                        linePoints[k + 1] = others[j+k];
+                        linePoints[k + 1] = others[j + k];
                     }
 
                     Arrays.sort(linePoints);
 
-                    for (int k = 0; k < linePoints.length; k++) {
-                        System.out.print(linePoints[k]);
-                        if (k < linePoints.length - 1) {
-                            System.out.print(" -> ");
+                    if (linePoints[0].equals(p)) { // Виводимо тільки якщо p - найменша точка
+                        for (int k = 0; k < linePoints.length; k++) {
+                            System.out.print(linePoints[k]);
+                            if (k < linePoints.length - 1) {
+                                System.out.print(" -> ");
+                            }
                         }
+                        System.out.println();
                     }
-                    System.out.println();
                 }
 
 
