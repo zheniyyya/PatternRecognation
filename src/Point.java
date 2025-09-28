@@ -78,7 +78,6 @@
             int SLOPE_ORDER_result4 = origin.SLOPE_ORDER.compare(origin, horizontal); //origin - ироджений сегмент
             System.out.println(SLOPE_ORDER_result4);
 
-
         }
 
     }
