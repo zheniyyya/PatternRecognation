@@ -70,7 +70,6 @@ public class Fast {
                     }
                 }
 
-
                 j+=count;
             }
         }
